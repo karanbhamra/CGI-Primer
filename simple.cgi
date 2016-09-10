@@ -9,10 +9,10 @@ print "Content-type: text/html\n\n";	#
 
 # print "$varname = $url"; # Debug purposes to check var name and url
 
-$fullurl = "http://www.$url/"; # create full url by adding protocol to the given url
+#$fullurl = "http://www.$url/"; # create full url by adding protocol to the given url
 # print $fullurl; # Debug purpose to get full webpage url
 
-$command=`/usr/bin/curl -L $fullurl`; # Get the url webpage ( -L argument for curl makes it follow redirect) 
+$command=`/usr/bin/curl -L $url`; # Get the url webpage ( -L argument for curl makes it follow redirect) 
 
 #Display a simple html page
 print <<"EOF";

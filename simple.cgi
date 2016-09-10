@@ -6,9 +6,9 @@ $values = $ENV{'QUERY_STRING'}; # Get the argument (will only accept one var and
 
 ($varname, $url) = split(/=/,$values); # Get the var name and value, seperated by '='
 
-print "Content-type: text/html\n\n";	# 
+print "Content-type: text/html\n\n";  # Specify content type
 
-$newurl = uri_unescape($url);
+$newurl = uri_unescape($url);	# Remove url encoding to use raw url
 # print "$varname = $url"; # Debug purposes to check var name and url
 
 #$fullurl = "http://www.$url/"; # create full url by adding protocol to the given url

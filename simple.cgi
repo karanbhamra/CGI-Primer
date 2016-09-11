@@ -9,25 +9,24 @@ $values = $ENV{'QUERY_STRING'}; # Get the argument (will only accept one var and
 print "Content-type: text/html\n\n";  # Specify content type
 
 $newurl = uri_unescape($url);	# Remove url encoding to use raw url
-# print "$varname = $url"; # Debug purposes to check var name and url
-
-#$fullurl = "http://www.$url/"; # create full url by adding protocol to the given url
-# print $fullurl; # Debug purpose to get full webpage url
 
 $command=`/usr/bin/curl -L $newurl`; # Get the url webpage ( -L argument for curl makes it follow redirect) 
 
 #Display a simple html page
 print <<"EOF";
-<HTML>
+<!doctype html>
+<HTML lang="en">
 <HEAD>
 <TITLE>$title</TITLE>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
 </HEAD>
 <BODY>
-<H1>$title by Karan Bhamra.</H1>
-<form action="simple.cgi">
+<H1 id="mytitle">$title by Karan Bhamra</H1>
+<form action="simple.cgi" id="myform">
 URL:<br>
-<input type="text" name="url" value=""><br>
-<input type="submit" formenctype="multipart/form-data" value="Submit">
+<input type="text" name="url" value="" id="myurl"><br>
+<input type="submit" formenctype="multipart/form-data" value="Submit" id="mybutton">
 </form>
 </BODY>
 </HTML>

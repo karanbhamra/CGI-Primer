@@ -23,7 +23,7 @@ print <<"EOF";
 </HEAD>
 <BODY>
 <H1 id="mytitle">$title by Karan Bhamra</H1>
-<form action="simple.cgi" id="myform">
+<form action="simple.cgi" id="myform" method="GET">
 URL:<br>
 <input type="text" name="url" value="" id="myurl"><br>
 <input type="submit" formenctype="multipart/form-data" value="Submit" id="mybutton">

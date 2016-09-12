@@ -5,7 +5,7 @@ Use it by navigating to the cgi-bin directory and running it on the Apache serve
 
 Usage: 
 
-- First way, pass a value to a variable in query string: http://www.csun.edu/~ksb46159/cgi-bin/simple.cgi?url=www.thewebsiteyouwant.com
+- First way, pass a value to a variable in query string: http://www.csun.edu/~ksb46159/cgi-bin/simple.cgi?url=www.csun.edu
 
 - Second way, enter the url in the form provided on the webpage and press submit: http://www.csun.edu/~ksb46159/cgi-bin/simple.cgi
 
@@ -32,3 +32,7 @@ Log:
 - Added styling to the html so the users page starts below the script and does not affect the styling.
 
 - Finished project.
+
+Summary:
+
+- Met the requirements, and is completed and runs.

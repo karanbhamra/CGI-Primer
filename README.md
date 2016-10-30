@@ -1,5 +1,5 @@
-# Comp490-cgibin
-Comp 490 Primer project by Karan Bhamra
+# CGI-Primer
+A project that combines Perl and CGI.
 
 Use it by navigating to the cgi-bin directory and running it on the Apache server.
 
